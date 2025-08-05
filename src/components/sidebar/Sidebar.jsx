@@ -16,17 +16,19 @@ function Sidebar({ open, onClose }) {
                     <h1 className="text-2xl font-bold text-center font-mono">MENU</h1>
                     <i className="bx  bx-x  cursor-pointer" onClick={onClose}></i>
                 </div>
-                <ListaSidebar nome="Home" />
-                <ListaSidebar nome="Cardápio" />
-                <ListaSidebar nome="Promoções" />
-                <ListaSidebar nome="Sobre Nós" />
-                <ListaSidebar nome="Ajuda" />
-                <div className="flex justify-center items-center w-full h-13 gap-1 bg-red-600 text-white ">
+                <ul className="flex w-full text-center flex-col justify-center items-center h-3/5 leading-10 gap-7">
+                    <ListaSidebar nome="Home" />
+                    <ListaSidebar nome="Cardápio" />
+                    <ListaSidebar nome="Promoções" />
+                    <ListaSidebar nome="Sobre Nós" />
+                    <ListaSidebar nome="Ajuda" />
+                </ul>
+                <div className="flex justify-center items-center w-full h-13 gap-1 bg-red-600 text-white">
                     <div className="flex items-center justify-center p-2 rounded-3xl hover:text-black hover:bg-amber-500 transition-colors duration-300 cursor-pointer gap-1">
                         <p>Telefone</p>
                         <i className="bx bx-phone"></i>
                     </div>
-                        <div className="flex items-center justify-center p-2 rounded-3xl hover:text-black hover:bg-amber-500 transition-colors duration-300 cursor-pointer gap-1">
+                    <div className="flex items-center justify-center p-2 rounded-3xl hover:text-black hover:bg-amber-500 transition-colors duration-300 cursor-pointer gap-1">
                         <p>Configurações</p>
                         <i className="bx bx-cog"></i>
                     </div>
