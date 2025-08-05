@@ -1,0 +1,38 @@
+import ListaSidebar from "../listaSidebar/ListaSidebar";
+
+function Sidebar({ open, onClose }) {
+    return (
+        <>
+
+            {open && (
+                <div className="fixed inset-0 z-40" onClick={onClose}></div>
+            )}
+            <aside className={`
+                    w-64 h-screen bg-amber-400 text-black flex justify-between flex-col z-50 fixed top-0 left-0
+                    transition-transform duration-300 ease-in-out
+                    ${open ? "translate-x-0" : "-translate-x-full"}
+                `}>
+                <div className="width-full h-16 flex justify-end items-center p-1.5 gap-19 bg-red-600 text-white">
+                    <h1 className="text-2xl font-bold text-center font-mono">MENU</h1>
+                    <i className="bx  bx-x  cursor-pointer" onClick={onClose}></i>
+                </div>
+                <ListaSidebar nome="Home" />
+                <ListaSidebar nome="Cardápio" />
+                <ListaSidebar nome="Promoções" />
+                <ListaSidebar nome="Sobre Nós" />
+                <ListaSidebar nome="Ajuda" />
+                <div className="flex justify-center items-center w-full h-13 gap-1 bg-red-600 text-white ">
+                    <div className="flex items-center justify-center p-2 rounded-3xl hover:text-black hover:bg-amber-500 transition-colors duration-300 cursor-pointer gap-1">
+                        <p>Telefone</p>
+                        <i className="bx bx-phone"></i>
+                    </div>
+                        <div className="flex items-center justify-center p-2 rounded-3xl hover:text-black hover:bg-amber-500 transition-colors duration-300 cursor-pointer gap-1">
+                        <p>Configurações</p>
+                        <i className="bx bx-cog"></i>
+                    </div>
+                </div>
+            </aside>
+        </>
+    );
+}
+export default Sidebar;
