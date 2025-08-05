@@ -8,7 +8,7 @@ function Sidebar({ open, onClose }) {
                 <div className="fixed inset-0 z-40" onClick={onClose}></div>
             )}
             <aside className={`
-                    w-64 h-screen bg-amber-400 text-black flex justify-evenly flex-col z-50 fixed top-0 left-0
+                    w-64 h-full bg-amber-400 text-black flex justify-between flex-col z-50 fixed top-0 left-0
                     transition-transform duration-300 ease-in-out
                     ${open ? "translate-x-0" : "-translate-x-full"}
                 `}>
