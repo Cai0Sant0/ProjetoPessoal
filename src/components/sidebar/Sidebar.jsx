@@ -22,10 +22,10 @@ function Sidebar({ open, onClose }) {
                     <ListaSidebar nome="Informações" />
                 </ul>
                 <div className="flex justify-center items-center w-full h-13 gap-1 bg-sky-800 text-white">
-                    <div className="flex items-center justify-center p-2 rounded-3xl w-1/2 hover:text-black hover:bg-amber-400 transition-colors duration-300 cursor-pointer gap-1">
+                    <a href="" className="flex items-center justify-center p-2 rounded-3xl w-1/2 hover:text-black hover:bg-amber-400 transition-colors duration-300 cursor-pointer gap-1">
                         <p>Telefones</p>
                         <i className="bx bx-phone"></i>
-                    </div>
+                    </a>
                 </div>
             </aside>
         </>
