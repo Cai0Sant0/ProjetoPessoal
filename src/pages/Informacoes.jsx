@@ -7,7 +7,7 @@ function Informacoes() {
 
     return (
         <div>
-            <Navbar onMenuClick={() => setSidebarOpen(true)} />
+            <Navbar onMenuClick={() => setSidebarOpen(true) } inputInvisivel = {true}/>
             <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
              <h1 className="w-full text-2xl text-center font-bold font-mono p-3 md:text-4xl">Informações</h1>
         </div>

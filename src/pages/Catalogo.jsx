@@ -7,8 +7,8 @@ function Catalogo() {
 
     return (
         <div>
-            <Navbar onMenuClick={() => setSidebarOpen(true)} />
-            <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+            <Navbar onMenuClick={() => setSidebarOpen(true)} inputInvisivel = {true}/>
+            <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)}/>
              <h1 className="w-full text-2xl text-center font-bold font-mono p-3 md:text-4xl">Catálogos</h1>
         </div>
     );
