@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar/Navbar";
 import Sidebar from "../components/sidebar/Sidebar";
 import CardItem from "../components/CardItem/CardItem";
-import Rodape from "../components/rodape/Rodape";
+import Rodape from "../components/Rodape/Rodape";
 
 const produtos = [
     {
