@@ -1,7 +1,7 @@
-import Navbar from "./components/navbar/Navbar";
-import Sidebar from "./components/sidebar/Sidebar";
-import CardItem from "./components/CardItem/CardItem";
-import Rodape from "./components/Rodape/Rodape";
+import Navbar from "../components/navbar/Navbar";
+import Sidebar from "../components/sidebar/Sidebar";
+import CardItem from "../components/CardItem/CardItem";
+import Rodape from "../components/rodape/Rodape";
 
 const produtos = [
     {
@@ -48,7 +48,7 @@ const produtos = [
 
 import { useState } from "react";
 
-function App() {
+function Home() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [pesquisa, setPesquisa] = useState("");
 
@@ -84,4 +84,4 @@ function App() {
     );
 }
 
-export default App;
+export default Home;

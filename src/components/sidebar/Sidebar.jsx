@@ -17,9 +17,9 @@ function Sidebar({ open, onClose }) {
                     <i className="bx  bx-x  cursor-pointer" onClick={onClose}></i>
                 </div>
                 <ul className="flex w-full bg-white text-center flex-col justify-center items-center h-10/12 gap-20 ">
-                    <ListaSidebar nome="Home" />
-                    <ListaSidebar nome="Sobre Nós" />
-                    <ListaSidebar nome="Informações" />
+                    <ListaSidebar nome="Home" url = "/" />
+                    <ListaSidebar nome="Sobre Nós" url = "/sobreNos" />
+                    <ListaSidebar nome="Informações" url = "/informacoes"  />
                 </ul>
                 <div className="flex justify-center items-center w-full h-13 gap-1 bg-sky-800 text-white">
                     <a href="" className="flex items-center justify-center p-2 rounded-3xl w-1/2 hover:text-black hover:bg-amber-400 transition-colors duration-300 cursor-pointer gap-1">
