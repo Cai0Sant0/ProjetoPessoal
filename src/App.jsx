@@ -61,12 +61,13 @@ function App() {
         <>
             <Navbar onMenuClick={() => setSidebarOpen(true)} pesquisa={pesquisa} setPesquisa={setPesquisa} />
             <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
-            <h1 className="w-full text-2xl text-center font-bold font-mono p-6 md:text-4xl">Produtos Em Destaque!</h1>
-            <main className="grid grid-cols-1 md:grid-cols-4 min-h-svh p-8 gap-4">
+            <h1 className="w-full text-2xl text-center font-bold font-mono p-3 md:text-4xl">Produtos Em Destaque!</h1>
+            <main className="grid grid-cols-1 md:grid-cols-4 min-h-svh p-3 gap-4">
                 {produtosFiltrados.length === 0 ? (
-                    <div className="col-span-full text-center text-xl font-bold text-gray-600">
-                        Nenhum produto encontrado.
-                    </div>
+                    <article className="col-span-full flex flex-col items-center justify-center gap-10">
+                        <div className=" w-2/5 h-2/5  md:w-1/2 md:h-1/2 bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6PBacfmK_lpotz3PFvf7e6ugtzvZgoG4KCJ2ZImVH6AYVb1bmx6SqAEIwDxvyiDIUTs&usqp=CAU)] bg-contain bg-no-repeat bg-center"></div>
+                        <h2 className=" text-2xl md:text-4xl text-center font-bold text-gray-600">Produto não encontrado...</h2>
+                    </article>
                 ) : (
                     produtosFiltrados.map((produto) => (
                         <CardItem
