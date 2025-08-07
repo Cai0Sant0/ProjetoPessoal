@@ -7,7 +7,7 @@ function Navbar(props) {
             <div className="w-1/2 h-8">
                 {
                     props.inputInvisivel ? (
-                        <h1 className="text-2xl font-bold font-mono text-center">Loja de couro Caioba</h1> 
+                        <h1 className=" text-xl md:text-2xl font-bold font-mono text-center">Loja de couro Caioba</h1>
                     ) : (
                         <>
                             <input type="text" name="Pesquisa" id="InputPesquisa" placeholder="PESQUISAR" className="bg-white h-full w-full text-black rounded-3xl font-bold font-mono pl-8" value={props.pesquisa} onChange={e => props.setPesquisa(e.target.value)} />
