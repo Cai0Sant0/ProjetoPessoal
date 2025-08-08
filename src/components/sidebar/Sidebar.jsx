@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ListaSidebar from "../listaSidebar/ListaSidebar";
 
 function Sidebar({ open, onClose }) {
@@ -22,10 +23,10 @@ function Sidebar({ open, onClose }) {
                     <ListaSidebar nome="Informações" url = "/informacoes"  />
                 </ul>
                 <div className="flex justify-center items-center w-full h-13 gap-1 bg-sky-800 text-white">
-                    <a href="" className="flex items-center justify-center p-2 rounded-3xl w-1/2 hover:text-black hover:bg-amber-400 transition-colors duration-300 cursor-pointer gap-1">
+                    <Link to={"/contatos"} className="flex items-center justify-center p-2 rounded-3xl w-1/2 hover:text-black hover:bg-amber-400 transition-colors duration-300 cursor-pointer gap-1">
                         <p>Telefones</p>
                         <i className="bx bx-phone"></i>
-                    </a>
+                    </Link>
                 </div>
             </aside>
         </>

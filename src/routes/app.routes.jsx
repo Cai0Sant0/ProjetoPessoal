@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Informacoes from "../pages/Informacoes";
 import Catalogo from "../pages/Catalogo";
 import SobreNos from "../pages/SobreNos";
+import Contatos from "../pages/Contatos";
 
 function AppRoutes() {
     return (
@@ -12,6 +13,7 @@ function AppRoutes() {
             <Route path="/informacoes" element={<Informacoes />} />
             <Route path="/catalogo" element={<Catalogo />} />
             <Route path="/sobreNos" element={<SobreNos />} />
+            <Route path="/contatos" element={<Contatos />} />
         </Switch>
     );
 }
