@@ -7,10 +7,10 @@ function Navbar(props) {
             <div className="w-1/2 h-8">
                 {
                     props.inputInvisivel ? (
-                        <h1 className=" text-xl md:text-2xl font-bold font-mono text-center">Loja de couro Caioba</h1>
+                        <div className="w-full h-10 bg-contain bg-no-repeat bg-center bg-[url(https://casaromeu.com.br/wp-content/uploads/2025/06/Ativo-1.png)]"></div>
                     ) : (
                         <>
-                            <input type="text" name="Pesquisa" id="InputPesquisa" placeholder="PESQUISAR" className="bg-white h-full w-full text-black rounded-3xl font-bold font-mono pl-8" value={props.pesquisa} onChange={e => props.setPesquisa(e.target.value)} />
+                            <input type="text" name="Pesquisa" id="InputPesquisa" placeholder="PESQUISAR" className="bg-white h-full w-full text-black rounded-3xl font-bold font-mono pl-8" value={props.pesquisa} onChange={e => props.setPesquisa(e.target.value)} autoComplete="off" />
                             <i className='bx bx-ms bx-search text-black relative bottom-6.5 left-2'></i>
                         </>
                     )
